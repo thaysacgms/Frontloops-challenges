@@ -1,0 +1,184 @@
+@import "__reset";
+
+$darkgray: #9D9D9D;
+$lightgray: #D7D7D7;
+$bg-color: #fff;
+$main-title: #1B1918;
+$title-card: #B1B1B2;
+$hover-card: #F6F6F6;
+$next-card: #598BDD;
+$hover-next: #4F82E1;
+
+html, body {
+    height:100%;
+    width:100%;
+}
+
+body {
+    background: url('./img/background.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+}
+
+.payment {
+    background-color: $bg-color;
+    height:350px;
+    width:80%;
+    margin: 0 auto;
+    margin-top:6.8em;
+    border-radius: 6px 6px 0px 0px;
+
+
+    .sessions {
+        display: flex;
+        justify-content: center;
+
+        .first-circle, .second-circle, .third-circle {
+            width:6px;
+            height:6px;
+            background-color: $lightgray;
+            border-radius: 50%;
+            margin:20px 4px;
+        }
+
+        .first-circle {
+            background-color: $darkgray;
+        }
+    
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $lightgray;
+
+        .main-title {
+            text-transform: uppercase;
+            color: $main-title;
+            margin-bottom: 8%;
+            letter-spacing: 1px;
+
+            font: {
+                size: 20px;
+                family: 'Roboto', sans-serif;
+                weight: 700;
+            }
+        }
+    }
+}
+
+.card {
+    border-bottom:1px solid $lightgray;
+    
+    &:hover {
+        background-color: $hover-card;
+    }
+    .card-visa {
+        padding:20px;
+        display: flex;
+        align-items: center;
+    }
+    .card-img {
+        width:50px;
+    }
+
+    .card-title-gray {
+        text-transform: uppercase;
+        color: $title-card;
+        margin-left:15px;
+        letter-spacing: 1px;
+        font: {
+            size: 16px;
+            family: 'Roboto', sans-serif;
+            weight: 700;
+        }
+    }
+
+    .card-title {
+        text-transform: uppercase;
+        color: $main-title;
+        margin-left:15px;
+        letter-spacing: 1px;
+        font: {
+            size: 16px;
+            family: 'Roboto', sans-serif;
+            weight: 700;
+        }
+    }
+
+    .card-mastercard {
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img-title {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .card-maestro {
+        padding:20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.next-button {
+    width:100%;
+    background-color: $next-card;
+    border:none;
+
+    &:active {
+        background-color: $hover-next;
+        transform: translateY(1px);
+    }
+
+    &:hover {
+        background-color: $hover-next;
+    }
+
+    .next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px 15px;
+        cursor: pointer;
+        width:100%;
+
+        .next-title {
+            color: white;
+            text-transform: uppercase;
+            margin-right:6px;
+            font: {
+                size: 14px;
+                family: 'Roboto', sans-serif;
+                weight: 700;
+            }
+        }
+
+        .arrow {
+            width:15px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .payment {
+        width:50%;
+    }
+}
+
+@media (min-width:1020px) {
+    .payment {
+        width:30%;
+    }
+}
+
+@media (min-width:1800px) {
+    .payment {
+        width:25%;
+    }
+}
