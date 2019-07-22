@@ -233,14 +233,6 @@ body {
   width: 15px;
 }
 
-.credits {
-  background-color: white;
-  display:inline-block;
-  margin-top:25%;
-  padding: 5px;
-  border-radius:5px;
-}
-
 @media (min-width: 768px) {
   .payment {
     width: 50%;
