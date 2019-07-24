@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #A8C0D5;
+}
+
+.bg {
+  background-color: #A8C0D5;
+  width: 100%;
+  height: 624px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 360px) {
+  .bg {
+    height: 680px;
+  }
+}
+
+.bg .card {
+  position: absolute;
+  background-color: white;
+  width: 35%;
+  height: 610px;
+}
+
+@media only screen and (min-width: 360px) {
+  .bg .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg .card {
+    width: 70%;
+    height: 570px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .bg .card {
+    width: 40%;
+  }
+}
+
+.bg .card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #6A96D8;
+  padding: 20px 15px;
+}
+
+.bg .card .header .dot-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg .card .header .dot {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.bg .card .header .user {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.bg .card .header .close {
+  opacity: 0.7;
+}
+
+.bg .card .header .close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bg .card .today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 23px 0px;
+}
+
+.bg .card .today > p {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #DADBDD;
+}
+
+.bg .card .line-left {
+  border-bottom: 1px solid #E1E1E1;
+  width: 40%;
+  height: 1px;
+  margin-left: 4%;
+}
+
+.bg .card .line-right {
+  border-bottom: 1px solid #E1E1E1;
+  width: 40%;
+  height: 1px;
+  margin-right: 4%;
+}
+
+.bg .card .division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg .card .line2 {
+  border-bottom: 1px solid #E1E1E1;
+  width: 100%;
+  height: 1px;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 5%;
+}
+
+.bg .card .time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ACACB1;
+  position: relative;
+  left: 4%;
+  width: 50%;
+  margin-bottom: 0.6em;
+}
+
+.bg .card .message {
+  background-color: #E6EDF6;
+  padding: 13px;
+  width: 60%;
+  position: relative;
+  left: 5%;
+  border-radius: 0px 5px 5px 5px;
+}
+
+.bg .card .message:before {
+  content: '';
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
+  width: 9px;
+  height: 8px;
+  background-color: #E6EDF6;
+  position: absolute;
+  display: block;
+  left: -8px;
+  top: 0px;
+}
+
+.bg .card .message > p {
+  width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.bg .card .time2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ACACB1;
+  position: relative;
+  left: 63%;
+  width: 7%;
+  margin-bottom: 0.6em;
+}
+
+.bg .card .message2 {
+  background-color: #F2F2F2;
+  padding: 13px;
+  width: 62%;
+  position: relative;
+  right: 5%;
+  margin-top: 4%;
+  border-radius: 5px 0px 5px 5px;
+}
+
+.bg .card .message2:before {
+  content: '';
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+  width: 9px;
+  height: 8px;
+  background-color: #F2F2F2;
+  position: absolute;
+  display: block;
+  right: -8px;
+  top: 0px;
+}
+
+.bg .card .message2 > p {
+  width: 94%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.bg .card .time-message2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3%;
+}
+
+.bg .card .time3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ACACB1;
+  position: relative;
+  left: 4%;
+  width: 50%;
+  margin-bottom: 0.6em;
+  margin-top: 4%;
+}
+
+.bg .card .message3 {
+  background-color: #E6EDF6;
+  padding: 13px;
+  width: 18%;
+  position: relative;
+  left: 5%;
+  border-radius: 0px 5px 5px 5px;
+}
+
+.bg .card .message3:before {
+  content: '';
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
+  width: 9px;
+  height: 8px;
+  background-color: #E6EDF6;
+  position: absolute;
+  display: block;
+  left: -8px;
+  top: 0px;
+}
+
+.bg .card .message3 > p {
+  width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.bg .card .message4 {
+  background-color: #FFC2C1;
+  padding: 13px 4px 13px 13px;
+  width: 44%;
+  position: relative;
+  right: 5%;
+  margin-top: 4%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.bg .card .message4 > p {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.bg .card .time-message4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bg .card .text-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 1em;
+}
+
+.bg .card .text-message > input {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  width: 75%;
+  height: 25px;
+  margin-left: 4%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.bg .card .text-message > input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ACACB1;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 360px) {
+  .bg .card .text-message > input {
+    width: 68%;
+  }
+}
+
+.bg .card .text-message .send {
+  color: #6A96D8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  width: 12%;
+  margin-right: 4%;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 360px) {
+  .bg .card .text-message .send {
+    width: 17%;
+  }
+}
+
+.bg .credits {
+  margin-top: 6%;
+  color: white;
+}
+
+@media only screen and (min-width: 360px) {
+  .bg .credits {
+    margin-top: 9%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

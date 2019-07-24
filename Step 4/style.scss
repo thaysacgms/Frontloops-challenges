@@ -1,0 +1,336 @@
+@import "__reset";
+
+$bg-color: #A8C0D5;
+$header: #6A96D8;
+$message-box: white;
+$personal-message: #E6EDF6;
+$friend-message: #F2F2F2;
+$block-message: #FFC2C1;
+$lines: #E1E1E1;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $bg-color;
+ 
+}
+
+.bg {
+    background-color: #A8C0D5;
+    width: 100%;
+    height: 624px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 360px) {
+           height: 680px;
+        }
+
+    .card {
+        position: absolute;
+        background-color: $message-box;
+        width: 35%;
+        height: 610px;
+
+        @media only screen and (min-width: 360px) {
+            width: 90%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            height: 570px;
+        }
+
+        @media only screen and (min-width: 1020px) {
+            width: 40%;
+        }
+
+        .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: $header;
+        padding: 20px 15px;
+
+            .dot-user {
+                display: flex;
+                align-items: center;
+            }
+
+            .dot {
+                width: 6px;
+                height: 6px;
+                background-color: white;
+                border-radius: 50%;
+                margin-left: 10px;
+                margin-right: 15px;
+            }
+
+            .user {
+                text-transform: uppercase;
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            .close {
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+       
+        .today {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 23px 0px;
+
+            & > p {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #DADBDD;
+            }
+        }
+
+        .line-left {
+            border-bottom: 1px solid $lines;
+            width:40%;
+            height: 1px;
+            margin-left: 4%;
+        }
+
+        .line-right {
+            border-bottom: 1px solid $lines;
+            width:40%;
+            height: 1px;
+            margin-right: 4%;
+        }
+
+        .division {
+            display: flex;
+
+        }
+        .line2 {
+            border-bottom: 1px solid $lines;
+            width:100%;
+            height: 1px;
+            margin-right: 4%;
+            margin-left: 4%;
+            margin-top: 5%;
+        }
+
+        .time {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ACACB1;
+           position: relative;
+           left: 4%;
+           width: 50%;
+           margin-bottom: 0.6em;
+        }
+
+        .message {
+            background-color: $personal-message;
+            padding: 13px;
+            width: 60%;
+            position: relative;
+            left: 5%;
+            border-radius: 0px 5px 5px 5px;
+
+            &:before {
+                content: '';
+                clip-path: polygon(0 0, 100% 100%, 100% 0);
+                width: 9px;
+                height: 8px;
+                background-color: $personal-message;
+                position: absolute;
+                display: block;
+                left: -8px;
+                top: 0px;
+            }
+
+            & > p {
+                width: 80%;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.6em;
+            }
+    
+        }
+
+        //second
+        .time2 {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ACACB1;
+           position: relative;
+           left: 63%;
+           width: 7%;
+           margin-bottom: 0.6em;
+            
+        }
+
+        .message2 {
+            background-color: $friend-message;
+            padding: 13px;
+            width: 62%;
+            position: relative;
+            right: 5%;
+            margin-top: 4%;
+            border-radius: 5px 0px 5px 5px;
+            
+            &:before {
+                content: '';
+                clip-path: polygon(100% 0, 0 0, 0 100%);
+                width: 9px;
+                height: 8px;
+                background-color: $friend-message;
+                position: absolute;
+                display: block;
+                right: -8px;
+                top: 0px;
+            }
+
+            & > p {
+                width: 94%;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.6em;
+            } 
+        
+        }
+        
+        .time-message2 {
+            display: flex;
+            justify-content: flex-end;  
+            margin-top: 3%;
+        }
+
+        //third
+        .time3 {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ACACB1;
+           position: relative;
+           left: 4%;
+           width: 50%;
+           margin-bottom: 0.6em;
+           margin-top: 4%;
+        }
+
+        .message3 {
+            background-color: $personal-message;
+            padding: 13px;
+            width: 18%;
+            position: relative;
+            left: 5%;
+            border-radius: 0px 5px 5px 5px;
+
+            &:before {
+                content: '';
+                clip-path: polygon(0 0, 100% 100%, 100% 0);
+                width: 9px;
+                height: 8px;
+                background-color: $personal-message;
+                position: absolute;
+                display: block;
+                left: -8px;
+                top: 0px;
+            }
+
+            & > p {
+                width: 80%;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.6em;
+            }
+    
+        }
+        
+        //fourth
+        .message4 {
+            background-color: $block-message;
+            padding: 13px 4px 13px 13px;
+            width: 44%;
+            position: relative;
+            right: 5%;
+            margin-top: 4%;
+            border-radius: 5px 5px 5px 5px;
+
+            & > p {
+                width: 90%;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.6em;
+            } 
+        
+        }
+        
+        .time-message4 {
+            display: flex;
+            justify-content: flex-end;  
+        }
+
+        .text-message {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 1em;
+
+            & > input {
+               box-shadow: 0 0 0 0;
+                border: 0 none;
+                outline: 0;
+                width: 75%;
+                height: 25px;
+                margin-left: 4%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+
+                &::-webkit-input-placeholder {
+                 font-size: 16px;
+                 font-weight: 500;
+                 color: #ACACB1;
+                 font-family: 'Roboto', sans-serif;
+                }
+
+                @media only screen and (min-width: 360px) {
+                    width: 68%;
+                }
+            }
+
+            .send {
+                color: $header;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                cursor: pointer;
+                font-family: 'Roboto', sans-serif;
+                background-color: white;
+                width:12%;
+                margin-right: 4%;
+                font-size: 16px;
+
+                @media only screen and (min-width: 360px) {
+                    width: 17%;
+                }
+
+            }
+
+        }
+
+    }
+
+    .credits {
+        margin-top: 6%;
+        color: white;
+
+        @media only screen and (min-width: 360px) {
+            margin-top: 9%;
+         }
+    }
+}
