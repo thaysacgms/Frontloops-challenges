@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+  background: url(./img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.bg .credits {
+  text-align: center;
+  margin-top: 6%;
+  font-weight: 500;
+}
+
+.card {
+  margin: 5% auto 0 auto;
+  background-color: white;
+  height: 410px;
+  width: 30%;
+  position: relative;
+}
+
+.card .container {
+  width: 80%;
+  padding-top: 12%;
+  margin: auto;
+}
+
+.card .container .departure-arrival {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .container .departure-arrival .division {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card .container .departure-arrival .arrival-paragraph {
+  text-align: right;
+}
+
+.card .container .main-title {
+  color: #3B8ACF;
+  text-transform: uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.card .container .division {
+  height: 5px;
+  width: 25px;
+  background-color: #D3E6F4;
+}
+
+.card .container .departure-paragraph, .card .container .arrival-paragraph {
+  text-transform: uppercase;
+  color: #AAABAA;
+  margin-top: 0.2em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card .container .flight-info {
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .container .flight-info .gate, .card .container .flight-info .seat {
+  margin-left: 25%;
+}
+
+.card .container .flight-info .info-title {
+  color: #AAABAA;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card .container .flight-info .info-paragraph {
+  margin-top: 15%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card .container .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8%;
+}
+
+.card .container .columns .qr-img {
+  width: 150px;
+}
+
+.card .container .columns .class, .card .container .columns .departure-info {
+  margin-top: 20%;
+}
+
+.card .container .columns .passenger-title, .card .container .columns .class-title, .card .container .columns .departureInfo-title {
+  margin-bottom: 7%;
+  color: #AAABAA;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card .container .columns .passenger-paragraph, .card .container .columns .class-paragraph, .card .container .columns .departureInfo-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
